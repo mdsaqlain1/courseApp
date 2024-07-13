@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #efefef;
+}
+::selection{
+    color: white;
+    background-color: black;
+}
+.Block{
+    display: block;
+}
+.flexCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fullHW{
+    height: 95vh;
+}
+.inputW{
+    width: 100%;
+}
+.mb-5{
+    margin-bottom: 20px;
+}
+.bg-white{
+    background-color: #ffffff;
+}
+.p-10{
+    padding: 3vw;
+    border-radius: 10px;
+}
+.mr-2{
+    margin-right: 5px;
+}
+.flexRow{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.shadow{
+    box-shadow: 10px 10px rgb(159, 159, 159);
+
+}
+.black{
+    border-radius: 1px solid black;
+    color: black;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plr-15{
+    padding: 0 15px;
+}
