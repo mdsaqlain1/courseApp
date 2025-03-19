@@ -1,8 +1,11 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const adminRoutes = require('./routes/admin.js');
-const userRoutes = require('./routes/user.js');
-const cors = require('cors');
+import express from 'express';
+import mongoose from 'mongoose';
+import { router as adminRoutes } from './routes/admin.js';
+import { router as userRoutes } from './routes/user.js';
+import dotenv from 'dotenv';
+dotenv.config();
+
+import cors from 'cors';
 
 const app = express();
 app.use(cors());
@@ -11,7 +14,7 @@ app.use(express.json());
 app.use('/admin', adminRoutes);
 app.use('/user', userRoutes);
 
-mongoose.connect("mongodb://127.0.0.1:27017", { dbName: "courses" })
+mongoose.connect(process.env.MONGODB_URI, { dbName: "courses" })
 .then(()=>{
     console.log("Connected to DB");
 })

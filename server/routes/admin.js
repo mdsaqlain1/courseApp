@@ -1,7 +1,7 @@
-const express = require('express');
-const {Course, Admin} = require('../db/index.js');
-const jwt = require('jsonwebtoken');
-const { SECRET, authenticateJwt } = require('../middlewares/auth');
+import express from 'express';
+import { Course, Admin } from '../db/index.js';
+import jwt from 'jsonwebtoken';
+import { SECRET, authenticateJwt } from '../middlewares/auth.js';
 
 const router = express.Router();
 
@@ -66,4 +66,4 @@ router.post('/signup', async (req, res) => {
     res.json({username : req.user.username});
   });
  
-module.exports = router
+export {router}
