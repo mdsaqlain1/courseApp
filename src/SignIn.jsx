@@ -12,12 +12,21 @@ function SignUp() {
   return (
     <>
       <div className="fullHW flexCenter">
-        <div className="mb-5">
+        <div className="mb-5 flexCenter">
           <Typography display={"inline"} fontWeight={"bold"} variant="h5">
-            {" "}
             COURSE WORLD
           </Typography>
+
+          {/* ✅ Demo Credentials */}
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            style={{ marginTop: "10px" }}
+          >
+            Demo Username: <strong>demo1</strong>, Password: <strong>demo1</strong>
+          </Typography>
         </div>
+
         <div className="flexCenter bg-white p-10 shadow">
           <div></div>
 
@@ -37,7 +46,7 @@ function SignUp() {
               <TextField
                 className="inputW"
                 id="outlined-basic"
-                label="password"
+                label="Password"
                 variant="outlined"
                 type="password"
                 value={password}

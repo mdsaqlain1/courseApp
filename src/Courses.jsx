@@ -33,7 +33,7 @@ function Courses() {
       }}
     >
       {course.length === 0 ? (
-        <Typography variant="h5" color="textSecondary">
+        <Typography variant="h5" color="textSecondary" style={{ margin: "20px" }}>
           No Courses Available
         </Typography>
       ) : (
