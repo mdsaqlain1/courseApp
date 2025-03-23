@@ -83,7 +83,8 @@ function SignIn() {
               </Button>
 
               {/* 👇 Login for demo with navigate */}
-              <p
+              <Typography
+                variant="body2"
                 style={{
                   cursor: "pointer",
                   textAlign: "center",
@@ -94,7 +95,7 @@ function SignIn() {
                 onClick={() => navigate("/login")}
               >
                 Login for demo
-              </p>
+              </Typography>
             </div>
           </div>
         </div>
